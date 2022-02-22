@@ -16,7 +16,6 @@ namespace SCalendar.Views
         public NewItemPage()
         {
             InitializeComponent();
-            BindingContext = new NewItemViewModel();
         }
     }
 }

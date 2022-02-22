@@ -9,8 +9,10 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
     <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.4.0.52" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Syncfusion.Xamarin.SfCalendar" />
+    <None Remove="Xamarin.Forms.PancakeView" />
   </ItemGroup>
 </Project>

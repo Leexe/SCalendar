@@ -13,6 +13,7 @@ namespace SCalendar
         {
             InitializeComponent();
 
+            Device.SetFlags(new[] {"Expander_Experimental"});
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }

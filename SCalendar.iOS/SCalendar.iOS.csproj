@@ -123,6 +123,7 @@
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <BundleResource Include="Resources\dogecoin.png" />
+    <BundleResource Include="Resources\PlusButton.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -137,6 +138,9 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
     <PackageReference Include="Syncfusion.Xamarin.SfCalendar">
       <Version>19.4.0.52</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms.PancakeView">
+      <Version>2.3.0.759</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

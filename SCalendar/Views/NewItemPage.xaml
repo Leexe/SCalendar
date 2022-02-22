@@ -4,14 +4,29 @@
              x:Class="SCalendar.Views.NewItemPage"
              Shell.PresentationMode="ModalAnimated"
              Title="New Item"
+             xmlns:vm="clr-namespace:SCalendar.ViewModels"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true">
+    <ContentPage.BindingContext>
+        <vm:NewItemViewModel/>
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
         <StackLayout Spacing="3" Padding="15">
-            <Label Text="Text" FontSize="Medium" />
-            <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
-            <Label Text="Description" FontSize="Medium" />
-            <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+            <Label Text="Year" FontSize="Medium" />
+            <Entry Text="{Binding Year}" FontSize="Medium" />
+            <Label Text="Month" FontSize="Medium" />
+            <Entry Text="{Binding Month}" FontSize="Medium" />
+            <Label Text="Starting Date" FontSize="Medium" />
+            <Entry Text="{Binding Starting_Date}" FontSize="Medium" />
+            <Label Text="Ending Date" FontSize="Medium" />
+            <Editor Text="{Binding Ending_Date}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+            <Label Text="Starting Time" FontSize="Medium" />
+            <Entry Text="{Binding Starting_Time}" FontSize="Medium" />
+            <Label Text="Ending Time" FontSize="Medium" />
+            <Entry Text="{Binding Ending_Time}" FontSize="Medium" />
+            <Label Text="Subject" FontSize="Medium" />
+            <Entry Text="{Binding Subject}" FontSize="Medium" />
             <StackLayout Orientation="Horizontal">
                 <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
                 <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
