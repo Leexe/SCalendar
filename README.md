@@ -1,2 +1,10 @@
-# SCalendar is a tech Demo for the C# language and .NET Framework create for the AP Computer Science Application Class
-# Features of the app include displaying mutiple events in one day and being able to change specific event colors
+# SCalendar 
+## Description
+Scalendar is a tech demo created from the C# language and .NET Framework. It is created for the open source project in AP Computer Science Applications
+# Features 
+- Display multiple events in one day
+- Span a singular event over multiple days
+- Have different colors for each event
+- Descriptions for each event
+# Contributors
+Tuan Le, Alina S, Amrith K
