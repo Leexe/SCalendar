@@ -35,7 +35,7 @@
                             </pv:GradientStopCollection>
                         </pv:PancakeView.BackgroundGradientStops>
                         <ImageButton Source="PlusButton.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"
-                                     Command="{Binding Refresh}" CommandParameter="{Binding Source={x:Reference calendar}}"/>
+                                     Clicked="OnImageButtonClicked"/>
                     </pv:PancakeView>
                  </Grid>
              </ScrollView>

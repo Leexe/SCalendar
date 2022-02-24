@@ -7,12 +7,20 @@ using Xamarin.Forms;
 
 using SCalendar.Models;
 using SCalendar.Services;
+using SCalendar.ViewModels;
 
 namespace SCalendar.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+
+        int itemsCreated = 0;
+        public int ItemsCreated
+        {
+            get { return itemsCreated; }
+            set { SetProperty(ref itemsCreated, value); }
+        }
 
         bool isBusy = false;
         public bool IsBusy

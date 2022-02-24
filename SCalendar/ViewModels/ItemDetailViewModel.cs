@@ -7,7 +7,7 @@ using Xamarin.Forms;
 namespace SCalendar.ViewModels
 {
     [QueryProperty(nameof(ItemId), nameof(ItemId))]
-    public class ItemDetailViewModel : BaseViewModel
+    public class ItemDetailViewModel : AppointmentsViewModel
     {
         private string itemId;
         private string text;

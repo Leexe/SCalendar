@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using System.Linq;
 
 using Xamarin.Forms;
 
@@ -38,9 +39,17 @@ namespace SCalendar.ViewModels
             {
                 Items.Clear();
                 var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in items)
+                //foreach (var item in items)
+                //{
+                //    Items.Add(item);
+                //}
+                for (int i = 0; i < 3; i++)
                 {
-                    Items.Add(item);
+                    Items.Add(items.ElementAt(i));
+                }
+                if (ItemsCreated == 0)
+                {
+                    Items.Add(items.ElementAt(6));
                 }
             }
             catch (Exception ex)
